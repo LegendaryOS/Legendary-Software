@@ -1,0 +1,66 @@
+/* Ogólny styl aplikacji - inspirowany Material Design (Android-like) */
+QMainWindow {
+    background-color: #F0F0F0;
+}
+
+QLabel {
+    color: #212121;
+}
+
+QPushButton {
+    background-color: #2196F3; /* Primary blue */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #1976D2; /* Darker blue on hover */
+}
+
+QPushButton:pressed {
+    background-color: #0D47A1; /* Even darker on press */
+}
+
+QPushButton:disabled {
+    background-color: #BDBDBD;
+    color: #757575;
+}
+
+QScrollArea {
+    border: none;
+    background-color: #FFFFFF;
+}
+
+QScrollBar:vertical {
+    background: #E0E0E0;
+    width: 8px;
+    margin: 0px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical {
+    background: #9E9E9E;
+    min-height: 20px;
+    border-radius: 4px;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QMessageBox {
+    background-color: #FFFFFF;
+    color: #212121;
+}
+
+QMessageBox QPushButton {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+}
