@@ -18,23 +18,32 @@ def load_packages():
             return json.load(file)
     except FileNotFoundError:
         return [
-            {
-                "name": "GIMP",
-                "description": "Potężny edytor graficzny do tworzenia i edycji obrazów.",
-                "icon": "https://www.gimp.org/images/frontpage/wilber-big.png",
-                "install_command": "sudo zypper install -y gimp",
-                "remove_command": "sudo zypper remove -y gimp",
-                "check_command": "zypper se -i gimp"
-            },
-            {
-                "name": "VLC",
-                "description": "Wszechstronny odtwarzacz multimedialny obsługujący wiele formatów.",
-                "icon": "https://www.videolan.org/images/logo.png",
-                "install_command": "sudo zypper install -y vlc",
-                "remove_command": "sudo zypper remove -y vlc",
-                "check_command": "zypper se -i vlc"
-            }
-        ]
+  {
+    "name": "GIMP",
+    "description": "Potężny edytor graficzny do tworzenia i edycji obrazów. Obsługuje warstwy, maski i zaawansowane narzędzia edycji.",
+    "icon": "https://www.gimp.org/images/frontpage/wilber-big.png",
+    "install_command": "sudo zypper install -y gimp",
+    "remove_command": "sudo zypper remove -y gimp",
+    "check_command": "zypper se -i gimp"
+  },
+  {
+    "name": "VLC",
+    "description": "Wszechstronny odtwarzacz multimedialny obsługujący wiele formatów audio i video bez dodatkowych kodeków.",
+    "icon": "https://www.videolan.org/images/logo.png",
+    "install_command": "sudo zypper install -y vlc",
+    "remove_command": "sudo zypper remove -y vlc",
+    "check_command": "zypper se -i vlc"
+  },
+  {
+    "name": "Firefox",
+    "description": "Szybka i prywatna przeglądarka internetowa z zaawansowanymi funkcjami ochrony prywatności.",
+    "icon": "https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo.eb1324e44442.svg",
+    "install_command": "sudo zypper install -y firefox",
+    "remove_command": "sudo zypper remove -y firefox",
+    "check_command": "zypper se -i firefox"
+  }
+]
+
 
 # Funkcja sprawdzająca, czy paczka jest zainstalowana
 def is_package_installed(check_command):
