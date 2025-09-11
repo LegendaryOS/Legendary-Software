@@ -1,0 +1,18 @@
+[
+    {
+        "name": "GIMP",
+        "description": "Potężny edytor graficzny.",
+        "icon": "https://www.gimp.org/images/frontpage/wilber-big.png",
+        "install_command": "sudo zypper install -y gimp",
+        "remove_command": "sudo zypper remove -y gimp",
+        "check_command": "zypper se -i gimp"
+    },
+    {
+        "name": "VLC",
+        "description": "Odtwarzacz multimedialny.",
+        "icon": "https://www.videolan.org/images/logo.png",
+        "install_command": "sudo zypper install -y vlc",
+        "remove_command": "sudo zypper remove -y vlc",
+        "check_command": "zypper se -i vlc"
+    }
+]
