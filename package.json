@@ -3,24 +3,126 @@
     "name": "GIMP",
     "description": "Potężny edytor graficzny do tworzenia i edycji obrazów. Obsługuje warstwy, maski i zaawansowane narzędzia edycji.",
     "icon": "https://www.gimp.org/images/frontpage/wilber-big.png",
-    "install_command": "sudo zypper install -y gimp",
-    "remove_command": "sudo zypper remove -y gimp",
-    "check_command": "zypper se -i gimp"
+    "install_command": "sudo isolator install gimp",
+    "remove_command": "sudo isolator remove gimp",
+    "update_command": "sudo isolator update gimp",
+    "check_command": "isolator list | grep gimp"
   },
   {
     "name": "VLC",
     "description": "Wszechstronny odtwarzacz multimedialny obsługujący wiele formatów audio i video bez dodatkowych kodeków.",
     "icon": "https://www.videolan.org/images/logo.png",
-    "install_command": "sudo zypper install -y vlc",
-    "remove_command": "sudo zypper remove -y vlc",
-    "check_command": "zypper se -i vlc"
+    "install_command": "sudo isolator install vlc",
+    "remove_command": "sudo isolator remove vlc",
+    "update_command": "sudo isolator update vlc",
+    "check_command": "isolator list | grep vlc"
   },
   {
     "name": "Firefox",
     "description": "Szybka i prywatna przeglądarka internetowa z zaawansowanymi funkcjami ochrony prywatności.",
     "icon": "https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo.eb1324e44442.svg",
-    "install_command": "sudo zypper install -y firefox",
-    "remove_command": "sudo zypper remove -y firefox",
-    "check_command": "zypper se -i firefox"
+    "install_command": "sudo isolator install firefox",
+    "remove_command": "sudo isolator remove firefox",
+    "update_command": "sudo isolator update firefox",
+    "check_command": "isolator list | grep firefox"
+  },
+  {
+    "name": "LibreOffice",
+    "description": "Kompletny pakiet biurowy zawierający edytor tekstu, arkusze kalkulacyjne, prezentacje i wiele więcej.",
+    "icon": "https://www.libreoffice.org/assets/Uploads/LibreOffice-Initial-Artwork-Icons/LibreOffice-Initial-Artwork-Icons-64px.png",
+    "install_command": "sudo isolator install libreoffice",
+    "remove_command": "sudo isolator remove libreoffice",
+    "update_command": "sudo isolator update libreoffice",
+    "check_command": "isolator list | grep libreoffice"
+  },
+  {
+    "name": "Krita",
+    "description": "Zaawansowany edytor graficzny dla artystów cyfrowych, świetny do malarstwa i ilustracji.",
+    "icon": "https://krita.org/wp-content/uploads/2022/02/krita_logo_300x300.png",
+    "install_command": "sudo isolator install krita",
+    "remove_command": "sudo isolator remove krita",
+    "update_command": "sudo isolator update krita",
+    "check_command": "isolator list | grep krita"
+  },
+  {
+    "name": "OBS Studio",
+    "description": "Oprogramowanie do nagrywania ekranu i streamingu na żywo.",
+    "icon": "https://obsproject.com/assets/images/new_icon_small-r.png",
+    "install_command": "sudo isolator install obs-studio",
+    "remove_command": "sudo isolator remove obs-studio",
+    "update_command": "sudo isolator update obs-studio",
+    "check_command": "isolator list | grep obs-studio"
+  },
+  {
+    "name": "Steam",
+    "description": "Platforma do gier i zarządzania biblioteką gier komputerowych.",
+    "icon": "https://store.cloudflare.steamstatic.com/public/shared/images/header/logo_steam.svg",
+    "install_command": "sudo isolator install steam",
+    "remove_command": "sudo isolator remove steam",
+    "update_command": "sudo isolator update steam",
+    "check_command": "isolator list | grep steam"
+  },
+  {
+    "name": "Discord",
+    "description": "Aplikacja do komunikacji głosowej, wideo i czatów tekstowych dla graczy i społeczności.",
+    "icon": "https://cdn.worldvectorlogo.com/logos/discord-6.svg",
+    "install_command": "sudo isolator install discord",
+    "remove_command": "sudo isolator remove discord",
+    "update_command": "sudo isolator update discord",
+    "check_command": "isolator list | grep discord"
+  },
+  {
+    "name": "Chromium",
+    "description": "Otwartoźródłowa wersja przeglądarki Google Chrome.",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/8/87/Chromium_Logo.svg",
+    "install_command": "sudo isolator install chromium",
+    "remove_command": "sudo isolator remove chromium",
+    "update_command": "sudo isolator update chromium",
+    "check_command": "isolator list | grep chromium"
+  },
+  {
+    "name": "Kdenlive",
+    "description": "Profesjonalny edytor wideo typu open-source z obsługą wielu formatów i efektów.",
+    "icon": "https://kdenlive.org/wp-content/uploads/kdenlive-logo-300x300.png",
+    "install_command": "sudo isolator install kdenlive",
+    "remove_command": "sudo isolator remove kdenlive",
+    "update_command": "sudo isolator update kdenlive",
+    "check_command": "isolator list | grep kdenlive"
+  },
+  {
+    "name": "Inkscape",
+    "description": "Edytor grafiki wektorowej do tworzenia ilustracji i logotypów.",
+    "icon": "https://media.inkscape.org/static/images/inkscape-logo.svg",
+    "install_command": "sudo isolator install inkscape",
+    "remove_command": "sudo isolator remove inkscape",
+    "update_command": "sudo isolator update inkscape",
+    "check_command": "isolator list | grep inkscape"
+  },
+  {
+    "name": "Audacity",
+    "description": "Popularny edytor audio z obsługą wielu efektów i nagrywania wielościeżkowego.",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Audacity_Logo.svg",
+    "install_command": "sudo isolator install audacity",
+    "remove_command": "sudo isolator remove audacity",
+    "update_command": "sudo isolator update audacity",
+    "check_command": "isolator list | grep audacity"
+  },
+  {
+    "name": "Thunderbird",
+    "description": "Klient pocztowy z obsługą wielu kont, kalendarza i wtyczek.",
+    "icon": "https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png",
+    "install_command": "sudo isolator install thunderbird",
+    "remove_command": "sudo isolator remove thunderbird",
+    "update_command": "sudo isolator update thunderbird",
+    "check_command": "isolator list | grep thunderbird"
+  },
+  {
+    "name": "VirtualBox",
+    "description": "Oprogramowanie do wirtualizacji, umożliwiające uruchamianie wielu systemów operacyjnych.",
+    "icon": "https://www.virtualbox.org/graphics/vbox_logo2_gradient.png",
+    "install_command": "sudo isolator install virtualbox",
+    "remove_command": "sudo isolator remove virtualbox",
+    "update_command": "sudo isolator update virtualbox",
+    "check_command": "isolator list | grep virtualbox"
   }
 ]
