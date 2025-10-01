@@ -1,128 +1,218 @@
 [
-  {
+ {
     "name": "GIMP",
     "description": "Potężny edytor graficzny do tworzenia i edycji obrazów. Obsługuje warstwy, maski i zaawansowane narzędzia edycji.",
     "icon": "https://www.gimp.org/images/frontpage/wilber-big.png",
-    "install_command": "sudo isolator install gimp",
-    "remove_command": "sudo isolator remove gimp",
-    "update_command": "sudo isolator update gimp",
-    "check_command": "isolator list | grep gimp"
+    "install_command": "sudo zypper in gimp",
+    "remove_command": "sudo zypper rm gimp",
+    "update_command": "sudo zypper up gimp",
+    "check_command": "rpm -q gimp"
   },
   {
     "name": "VLC",
     "description": "Wszechstronny odtwarzacz multimedialny obsługujący wiele formatów audio i video bez dodatkowych kodeków.",
     "icon": "https://www.videolan.org/images/logo.png",
-    "install_command": "sudo isolator install vlc",
-    "remove_command": "sudo isolator remove vlc",
-    "update_command": "sudo isolator update vlc",
-    "check_command": "isolator list | grep vlc"
+    "install_command": "sudo zypper in vlc vlc-codecs",
+    "remove_command": "sudo zypper rm vlc vlc-codecs",
+    "update_command": "sudo zypper up vlc vlc-codecs",
+    "check_command": "rpm -q vlc"
   },
   {
     "name": "Firefox",
     "description": "Szybka i prywatna przeglądarka internetowa z zaawansowanymi funkcjami ochrony prywatności.",
     "icon": "https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo.eb1324e44442.svg",
-    "install_command": "sudo isolator install firefox",
-    "remove_command": "sudo isolator remove firefox",
-    "update_command": "sudo isolator update firefox",
-    "check_command": "isolator list | grep firefox"
+    "install_command": "sudo zypper in MozillaFirefox",
+    "remove_command": "sudo zypper rm MozillaFirefox",
+    "update_command": "sudo zypper up MozillaFirefox",
+    "check_command": "rpm -q MozillaFirefox"
   },
   {
     "name": "LibreOffice",
     "description": "Kompletny pakiet biurowy zawierający edytor tekstu, arkusze kalkulacyjne, prezentacje i wiele więcej.",
     "icon": "https://www.libreoffice.org/assets/Uploads/LibreOffice-Initial-Artwork-Icons/LibreOffice-Initial-Artwork-Icons-64px.png",
-    "install_command": "sudo isolator install libreoffice",
-    "remove_command": "sudo isolator remove libreoffice",
-    "update_command": "sudo isolator update libreoffice",
-    "check_command": "isolator list | grep libreoffice"
+    "install_command": "sudo zypper in libreoffice",
+    "remove_command": "sudo zypper rm libreoffice",
+    "update_command": "sudo zypper up libreoffice",
+    "check_command": "rpm -q libreoffice"
   },
   {
     "name": "Krita",
     "description": "Zaawansowany edytor graficzny dla artystów cyfrowych, świetny do malarstwa i ilustracji.",
     "icon": "https://krita.org/wp-content/uploads/2022/02/krita_logo_300x300.png",
-    "install_command": "sudo isolator install krita",
-    "remove_command": "sudo isolator remove krita",
-    "update_command": "sudo isolator update krita",
-    "check_command": "isolator list | grep krita"
+    "install_command": "sudo zypper in krita",
+    "remove_command": "sudo zypper rm krita",
+    "update_command": "sudo zypper up krita",
+    "check_command": "rpm -q krita"
   },
   {
     "name": "OBS Studio",
     "description": "Oprogramowanie do nagrywania ekranu i streamingu na żywo.",
     "icon": "https://obsproject.com/assets/images/new_icon_small-r.png",
-    "install_command": "sudo isolator install obs-studio",
-    "remove_command": "sudo isolator remove obs-studio",
-    "update_command": "sudo isolator update obs-studio",
-    "check_command": "isolator list | grep obs-studio"
+    "install_command": "sudo zypper in obs-studio",
+    "remove_command": "sudo zypper rm obs-studio",
+    "update_command": "sudo zypper up obs-studio",
+    "check_command": "rpm -q obs-studio"
   },
   {
     "name": "Steam",
     "description": "Platforma do gier i zarządzania biblioteką gier komputerowych.",
     "icon": "https://store.cloudflare.steamstatic.com/public/shared/images/header/logo_steam.svg",
-    "install_command": "sudo isolator install steam",
-    "remove_command": "sudo isolator remove steam",
-    "update_command": "sudo isolator update steam",
-    "check_command": "isolator list | grep steam"
+    "install_command": "sudo zypper in steam",
+    "remove_command": "sudo zypper rm steam",
+    "update_command": "sudo zypper up steam",
+    "check_command": "rpm -q steam"
   },
   {
     "name": "Discord",
     "description": "Aplikacja do komunikacji głosowej, wideo i czatów tekstowych dla graczy i społeczności.",
     "icon": "https://cdn.worldvectorlogo.com/logos/discord-6.svg",
-    "install_command": "sudo isolator install discord",
-    "remove_command": "sudo isolator remove discord",
-    "update_command": "sudo isolator update discord",
-    "check_command": "isolator list | grep discord"
+    "install_command": "sudo zypper in discord",
+    "remove_command": "sudo zypper rm discord",
+    "update_command": "sudo zypper up discord",
+    "check_command": "rpm -q discord"
   },
   {
     "name": "Chromium",
     "description": "Otwartoźródłowa wersja przeglądarki Google Chrome.",
     "icon": "https://upload.wikimedia.org/wikipedia/commons/8/87/Chromium_Logo.svg",
-    "install_command": "sudo isolator install chromium",
-    "remove_command": "sudo isolator remove chromium",
-    "update_command": "sudo isolator update chromium",
-    "check_command": "isolator list | grep chromium"
+    "install_command": "sudo zypper in chromium",
+    "remove_command": "sudo zypper rm chromium",
+    "update_command": "sudo zypper up chromium",
+    "check_command": "rpm -q chromium"
   },
   {
     "name": "Kdenlive",
     "description": "Profesjonalny edytor wideo typu open-source z obsługą wielu formatów i efektów.",
     "icon": "https://kdenlive.org/wp-content/uploads/kdenlive-logo-300x300.png",
-    "install_command": "sudo isolator install kdenlive",
-    "remove_command": "sudo isolator remove kdenlive",
-    "update_command": "sudo isolator update kdenlive",
-    "check_command": "isolator list | grep kdenlive"
+    "install_command": "sudo zypper in kdenlive",
+    "remove_command": "sudo zypper rm kdenlive",
+    "update_command": "sudo zypper up kdenlive",
+    "check_command": "rpm -q kdenlive"
   },
   {
     "name": "Inkscape",
     "description": "Edytor grafiki wektorowej do tworzenia ilustracji i logotypów.",
     "icon": "https://media.inkscape.org/static/images/inkscape-logo.svg",
-    "install_command": "sudo isolator install inkscape",
-    "remove_command": "sudo isolator remove inkscape",
-    "update_command": "sudo isolator update inkscape",
-    "check_command": "isolator list | grep inkscape"
+    "install_command": "sudo zypper in inkscape",
+    "remove_command": "sudo zypper rm inkscape",
+    "update_command": "sudo zypper up inkscape",
+    "check_command": "rpm -q inkscape"
   },
   {
     "name": "Audacity",
     "description": "Popularny edytor audio z obsługą wielu efektów i nagrywania wielościeżkowego.",
     "icon": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Audacity_Logo.svg",
-    "install_command": "sudo isolator install audacity",
-    "remove_command": "sudo isolator remove audacity",
-    "update_command": "sudo isolator update audacity",
-    "check_command": "isolator list | grep audacity"
+    "install_command": "sudo zypper in audacity",
+    "remove_command": "sudo zypper rm audacity",
+    "update_command": "sudo zypper up audacity",
+    "check_command": "rpm -q audacity"
   },
   {
     "name": "Thunderbird",
     "description": "Klient pocztowy z obsługą wielu kont, kalendarza i wtyczek.",
     "icon": "https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png",
-    "install_command": "sudo isolator install thunderbird",
-    "remove_command": "sudo isolator remove thunderbird",
-    "update_command": "sudo isolator update thunderbird",
-    "check_command": "isolator list | grep thunderbird"
+    "install_command": "sudo zypper in MozillaThunderbird",
+    "remove_command": "sudo zypper rm MozillaThunderbird",
+    "update_command": "sudo zypper up MozillaThunderbird",
+    "check_command": "rpm -q MozillaThunderbird"
   },
   {
     "name": "VirtualBox",
     "description": "Oprogramowanie do wirtualizacji, umożliwiające uruchamianie wielu systemów operacyjnych.",
     "icon": "https://www.virtualbox.org/graphics/vbox_logo2_gradient.png",
-    "install_command": "sudo isolator install virtualbox",
-    "remove_command": "sudo isolator remove virtualbox",
-    "update_command": "sudo isolator update virtualbox",
-    "check_command": "isolator list | grep virtualbox"
+    "install_command": "sudo zypper in virtualbox",
+    "remove_command": "sudo zypper rm virtualbox",
+    "update_command": "sudo zypper up virtualbox",
+    "check_command": "rpm -q virtualbox"
+  },
+  {
+    "name": "Blender",
+    "description": "Wolne i otwarte oprogramowanie do tworzenia grafiki 3D, animacji i renderingu.",
+    "icon": "https://www.blender.org/wp-content/uploads/2019/07/Blender_logo_no_text.svg",
+    "install_command": "sudo zypper in blender",
+    "remove_command": "sudo zypper rm blender",
+    "update_command": "sudo zypper up blender",
+    "check_command": "rpm -q blender"
+  },
+  {
+    "name": "Visual Studio Code",
+    "description": "Edytor kodu zoptymalizowany do budowania i debugowania nowoczesnych aplikacji webowych i chmurowych.",
+    "icon": "https://code.visualstudio.com/assets/images/code-stable.png",
+    "install_command": "sudo zypper in code",
+    "remove_command": "sudo zypper rm code",
+    "update_command": "sudo zypper up code",
+    "check_command": "rpm -q code"
+  },
+  {
+    "name": "Telegram Desktop",
+    "description": "Aplikacja desktopowa do komunikacji tekstowej, głosowej i wideo.",
+    "icon": "https://telegram.org/img/t_logo.png",
+    "install_command": "sudo zypper in telegram-desktop",
+    "remove_command": "sudo zypper rm telegram-desktop",
+    "update_command": "sudo zypper up telegram-desktop",
+    "check_command": "rpm -q telegram-desktop"
+  },
+  {
+    "name": "GParted",
+    "description": "Edytor partycji dyskowych dla GNOME.",
+    "icon": "https://gparted.org/images/gparted-128.png",
+    "install_command": "sudo zypper in gparted",
+    "remove_command": "sudo zypper rm gparted",
+    "update_command": "sudo zypper up gparted",
+    "check_command": "rpm -q gparted"
+  },
+  {
+    "name": "FileZilla",
+    "description": "Klient FTP do przesyłania plików.",
+    "icon": "https://filezilla-project.org/images/filezilla_128x128.png",
+    "install_command": "sudo zypper in filezilla",
+    "remove_command": "sudo zypper rm filezilla",
+    "update_command": "sudo zypper up filezilla",
+    "check_command": "rpm -q filezilla"
+  },
+  {
+    "name": "Darktable",
+    "description": "Otwartoźródłowa aplikacja do obróbki zdjęć RAW.",
+    "icon": "https://www.darktable.org/resources/darktable.svg",
+    "install_command": "sudo zypper in darktable",
+    "remove_command": "sudo zypper rm darktable",
+    "update_command": "sudo zypper up darktable",
+    "check_command": "rpm -q darktable"
+  },
+  {
+    "name": "Calibre",
+    "description": "Menedżer e-booków do organizacji i konwersji książek elektronicznych.",
+    "icon": "https://calibre-ebook.com/img/calibre.svg",
+    "install_command": "sudo zypper in calibre",
+    "remove_command": "sudo zypper rm calibre",
+    "update_command": "sudo zypper up calibre",
+    "check_command": "rpm -q calibre"
+  },
+  {
+    "name": "Flameshot",
+    "description": "Potężne, ale proste narzędzie do robienia zrzutów ekranu.",
+    "icon": "https://flameshot.org/img/flameshot-logo.png",
+    "install_command": "sudo zypper in flameshot",
+    "remove_command": "sudo zypper rm flameshot",
+    "update_command": "sudo zypper up flameshot",
+    "check_command": "rpm -q flameshot"
+  },
+  {
+    "name": "Remmina",
+    "description": "Klient do zdalnego pulpitu obsługujący RDP, VNC i inne protokoły.",
+    "icon": "https://remmina.org/wp-content/uploads/2017/02/remmina-icon-256.png",
+    "install_command": "sudo zypper in remmina",
+    "remove_command": "sudo zypper rm remmina",
+    "update_command": "sudo zypper up remmina",
+    "check_command": "rpm -q remmina"
+  },
+  {
+    "name": "Vim",
+    "description": "Zaawansowany edytor tekstu dla programistów i administratorów.",
+    "icon": "https://www.vim.org/images/vim_small.gif",
+    "install_command": "sudo zypper in vim",
+    "remove_command": "sudo zypper rm vim",
+    "update_command": "sudo zypper up vim",
+    "check_command": "rpm -q vim"
   }
 ]
