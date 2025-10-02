@@ -1,9 +1,9 @@
 [package]
-name = "Legendary-Software"
+name = "legendary_software"
 version = "0.1.0"
 edition = "2021"
 authors = ["LegendaryOS Team"]
-description = "A Legendary Software GUI built with Rust and eGUI"
+description = "A legendary software GUI built with Rust and eGUI"
 
 [dependencies]
 eframe = "0.22.0"
