@@ -10,7 +10,6 @@ from PySide6.QtWidgets import (
 from PySide6.QtGui import QPixmap, QIcon
 from PySide6.QtCore import Qt, QUrl, QTimer, QPropertyAnimation
 from PySide6.QtNetwork import QNetworkAccessManager, QNetworkRequest, QNetworkReply
-
 # Funkcja do wczytania danych o paczkach z pliku JSON
 def load_packages():
     # Get the directory of the current script
@@ -26,223 +25,222 @@ def load_packages():
     "name": "GIMP",
     "description": "Potężny edytor graficzny do tworzenia i edycji obrazów. Obsługuje warstwy, maski i zaawansowane narzędzia edycji.",
     "icon": "https://www.gimp.org/images/frontpage/wilber-big.png",
-    "install_command": "sudo zypper in gimp",
-    "remove_command": "sudo zypper rm gimp",
-    "update_command": "sudo zypper up gimp",
+    "install_command": "sudo /usr/lib/legendaryos/rpm-ostree install gimp",
+    "remove_command": "sudo /usr/lib/legendaryos/rpm-ostree uninstall gimp",
+    "update_command": "sudo /usr/lib/legendaryos/rpm-ostree upgrade",
     "check_command": "rpm -q gimp"
   },
   {
     "name": "VLC",
     "description": "Wszechstronny odtwarzacz multimedialny obsługujący wiele formatów audio i video bez dodatkowych kodeków.",
     "icon": "https://www.videolan.org/images/logo.png",
-    "install_command": "sudo zypper in vlc vlc-codecs",
-    "remove_command": "sudo zypper rm vlc vlc-codecs",
-    "update_command": "sudo zypper up vlc vlc-codecs",
+    "install_command": "sudo /usr/lib/legendaryos/rpm-ostree install vlc vlc-codecs",
+    "remove_command": "sudo /usr/lib/legendaryos/rpm-ostree uninstall vlc vlc-codecs",
+    "update_command": "sudo /usr/lib/legendaryos/rpm-ostree upgrade",
     "check_command": "rpm -q vlc"
   },
   {
     "name": "Firefox",
     "description": "Szybka i prywatna przeglądarka internetowa z zaawansowanymi funkcjami ochrony prywatności.",
     "icon": "https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo.eb1324e44442.svg",
-    "install_command": "sudo zypper in MozillaFirefox",
-    "remove_command": "sudo zypper rm MozillaFirefox",
-    "update_command": "sudo zypper up MozillaFirefox",
+    "install_command": "sudo /usr/lib/legendaryos/rpm-ostree install MozillaFirefox",
+    "remove_command": "sudo /usr/lib/legendaryos/rpm-ostree uninstall MozillaFirefox",
+    "update_command": "sudo /usr/lib/legendaryos/rpm-ostree upgrade",
     "check_command": "rpm -q MozillaFirefox"
   },
   {
     "name": "LibreOffice",
     "description": "Kompletny pakiet biurowy zawierający edytor tekstu, arkusze kalkulacyjne, prezentacje i wiele więcej.",
     "icon": "https://www.libreoffice.org/assets/Uploads/LibreOffice-Initial-Artwork-Icons/LibreOffice-Initial-Artwork-Icons-64px.png",
-    "install_command": "sudo zypper in libreoffice",
-    "remove_command": "sudo zypper rm libreoffice",
-    "update_command": "sudo zypper up libreoffice",
+    "install_command": "sudo /usr/lib/legendaryos/rpm-ostree install libreoffice",
+    "remove_command": "sudo /usr/lib/legendaryos/rpm-ostree uninstall libreoffice",
+    "update_command": "sudo /usr/lib/legendaryos/rpm-ostree upgrade",
     "check_command": "rpm -q libreoffice"
   },
   {
     "name": "Krita",
     "description": "Zaawansowany edytor graficzny dla artystów cyfrowych, świetny do malarstwa i ilustracji.",
     "icon": "https://krita.org/wp-content/uploads/2022/02/krita_logo_300x300.png",
-    "install_command": "sudo zypper in krita",
-    "remove_command": "sudo zypper rm krita",
-    "update_command": "sudo zypper up krita",
+    "install_command": "sudo /usr/lib/legendaryos/rpm-ostree install krita",
+    "remove_command": "sudo /usr/lib/legendaryos/rpm-ostree uninstall krita",
+    "update_command": "sudo /usr/lib/legendaryos/rpm-ostree upgrade",
     "check_command": "rpm -q krita"
   },
   {
     "name": "OBS Studio",
     "description": "Oprogramowanie do nagrywania ekranu i streamingu na żywo.",
     "icon": "https://obsproject.com/assets/images/new_icon_small-r.png",
-    "install_command": "sudo zypper in obs-studio",
-    "remove_command": "sudo zypper rm obs-studio",
-    "update_command": "sudo zypper up obs-studio",
+    "install_command": "sudo /usr/lib/legendaryos/rpm-ostree install obs-studio",
+    "remove_command": "sudo /usr/lib/legendaryos/rpm-ostree uninstall obs-studio",
+    "update_command": "sudo /usr/lib/legendaryos/rpm-ostree upgrade",
     "check_command": "rpm -q obs-studio"
   },
   {
     "name": "Steam",
     "description": "Platforma do gier i zarządzania biblioteką gier komputerowych.",
     "icon": "https://store.cloudflare.steamstatic.com/public/shared/images/header/logo_steam.svg",
-    "install_command": "sudo zypper in steam",
-    "remove_command": "sudo zypper rm steam",
-    "update_command": "sudo zypper up steam",
+    "install_command": "sudo /usr/lib/legendaryos/rpm-ostree install steam",
+    "remove_command": "sudo /usr/lib/legendaryos/rpm-ostree uninstall steam",
+    "update_command": "sudo /usr/lib/legendaryos/rpm-ostree upgrade",
     "check_command": "rpm -q steam"
   },
   {
     "name": "Discord",
     "description": "Aplikacja do komunikacji głosowej, wideo i czatów tekstowych dla graczy i społeczności.",
     "icon": "https://cdn.worldvectorlogo.com/logos/discord-6.svg",
-    "install_command": "sudo zypper in discord",
-    "remove_command": "sudo zypper rm discord",
-    "update_command": "sudo zypper up discord",
+    "install_command": "sudo /usr/lib/legendaryos/rpm-ostree install discord",
+    "remove_command": "sudo /usr/lib/legendaryos/rpm-ostree uninstall discord",
+    "update_command": "sudo /usr/lib/legendaryos/rpm-ostree upgrade",
     "check_command": "rpm -q discord"
   },
   {
     "name": "Chromium",
     "description": "Otwartoźródłowa wersja przeglądarki Google Chrome.",
     "icon": "https://upload.wikimedia.org/wikipedia/commons/8/87/Chromium_Logo.svg",
-    "install_command": "sudo zypper in chromium",
-    "remove_command": "sudo zypper rm chromium",
-    "update_command": "sudo zypper up chromium",
+    "install_command": "sudo /usr/lib/legendaryos/rpm-ostree install chromium",
+    "remove_command": "sudo /usr/lib/legendaryos/rpm-ostree uninstall chromium",
+    "update_command": "sudo /usr/lib/legendaryos/rpm-ostree upgrade",
     "check_command": "rpm -q chromium"
   },
   {
     "name": "Kdenlive",
     "description": "Profesjonalny edytor wideo typu open-source z obsługą wielu formatów i efektów.",
     "icon": "https://kdenlive.org/wp-content/uploads/kdenlive-logo-300x300.png",
-    "install_command": "sudo zypper in kdenlive",
-    "remove_command": "sudo zypper rm kdenlive",
-    "update_command": "sudo zypper up kdenlive",
+    "install_command": "sudo /usr/lib/legendaryos/rpm-ostree install kdenlive",
+    "remove_command": "sudo /usr/lib/legendaryos/rpm-ostree uninstall kdenlive",
+    "update_command": "sudo /usr/lib/legendaryos/rpm-ostree upgrade",
     "check_command": "rpm -q kdenlive"
   },
   {
     "name": "Inkscape",
     "description": "Edytor grafiki wektorowej do tworzenia ilustracji i logotypów.",
     "icon": "https://media.inkscape.org/static/images/inkscape-logo.svg",
-    "install_command": "sudo zypper in inkscape",
-    "remove_command": "sudo zypper rm inkscape",
-    "update_command": "sudo zypper up inkscape",
+    "install_command": "sudo /usr/lib/legendaryos/rpm-ostree install inkscape",
+    "remove_command": "sudo /usr/lib/legendaryos/rpm-ostree uninstall inkscape",
+    "update_command": "sudo /usr/lib/legendaryos/rpm-ostree upgrade",
     "check_command": "rpm -q inkscape"
   },
   {
     "name": "Audacity",
     "description": "Popularny edytor audio z obsługą wielu efektów i nagrywania wielościeżkowego.",
     "icon": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Audacity_Logo.svg",
-    "install_command": "sudo zypper in audacity",
-    "remove_command": "sudo zypper rm audacity",
-    "update_command": "sudo zypper up audacity",
+    "install_command": "sudo /usr/lib/legendaryos/rpm-ostree install audacity",
+    "remove_command": "sudo /usr/lib/legendaryos/rpm-ostree uninstall audacity",
+    "update_command": "sudo /usr/lib/legendaryos/rpm-ostree upgrade",
     "check_command": "rpm -q audacity"
   },
   {
     "name": "Thunderbird",
     "description": "Klient pocztowy z obsługą wielu kont, kalendarza i wtyczek.",
     "icon": "https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png",
-    "install_command": "sudo zypper in MozillaThunderbird",
-    "remove_command": "sudo zypper rm MozillaThunderbird",
-    "update_command": "sudo zypper up MozillaThunderbird",
+    "install_command": "sudo /usr/lib/legendaryos/rpm-ostree install MozillaThunderbird",
+    "remove_command": "sudo /usr/lib/legendaryos/rpm-ostree uninstall MozillaThunderbird",
+    "update_command": "sudo /usr/lib/legendaryos/rpm-ostree upgrade",
     "check_command": "rpm -q MozillaThunderbird"
   },
   {
     "name": "VirtualBox",
     "description": "Oprogramowanie do wirtualizacji, umożliwiające uruchamianie wielu systemów operacyjnych.",
     "icon": "https://www.virtualbox.org/graphics/vbox_logo2_gradient.png",
-    "install_command": "sudo zypper in virtualbox",
-    "remove_command": "sudo zypper rm virtualbox",
-    "update_command": "sudo zypper up virtualbox",
+    "install_command": "sudo /usr/lib/legendaryos/rpm-ostree install virtualbox",
+    "remove_command": "sudo /usr/lib/legendaryos/rpm-ostree uninstall virtualbox",
+    "update_command": "sudo /usr/lib/legendaryos/rpm-ostree upgrade",
     "check_command": "rpm -q virtualbox"
   },
   {
     "name": "Blender",
     "description": "Wolne i otwarte oprogramowanie do tworzenia grafiki 3D, animacji i renderingu.",
     "icon": "https://www.blender.org/wp-content/uploads/2019/07/Blender_logo_no_text.svg",
-    "install_command": "sudo zypper in blender",
-    "remove_command": "sudo zypper rm blender",
-    "update_command": "sudo zypper up blender",
+    "install_command": "sudo /usr/lib/legendaryos/rpm-ostree install blender",
+    "remove_command": "sudo /usr/lib/legendaryos/rpm-ostree uninstall blender",
+    "update_command": "sudo /usr/lib/legendaryos/rpm-ostree upgrade",
     "check_command": "rpm -q blender"
   },
   {
     "name": "Visual Studio Code",
     "description": "Edytor kodu zoptymalizowany do budowania i debugowania nowoczesnych aplikacji webowych i chmurowych.",
     "icon": "https://code.visualstudio.com/assets/images/code-stable.png",
-    "install_command": "sudo zypper in code",
-    "remove_command": "sudo zypper rm code",
-    "update_command": "sudo zypper up code",
+    "install_command": "sudo /usr/lib/legendaryos/rpm-ostree install code",
+    "remove_command": "sudo /usr/lib/legendaryos/rpm-ostree uninstall code",
+    "update_command": "sudo /usr/lib/legendaryos/rpm-ostree upgrade",
     "check_command": "rpm -q code"
   },
   {
     "name": "Telegram Desktop",
     "description": "Aplikacja desktopowa do komunikacji tekstowej, głosowej i wideo.",
     "icon": "https://telegram.org/img/t_logo.png",
-    "install_command": "sudo zypper in telegram-desktop",
-    "remove_command": "sudo zypper rm telegram-desktop",
-    "update_command": "sudo zypper up telegram-desktop",
+    "install_command": "sudo /usr/lib/legendaryos/rpm-ostree install telegram-desktop",
+    "remove_command": "sudo /usr/lib/legendaryos/rpm-ostree uninstall telegram-desktop",
+    "update_command": "sudo /usr/lib/legendaryos/rpm-ostree upgrade",
     "check_command": "rpm -q telegram-desktop"
   },
   {
     "name": "GParted",
     "description": "Edytor partycji dyskowych dla GNOME.",
     "icon": "https://gparted.org/images/gparted-128.png",
-    "install_command": "sudo zypper in gparted",
-    "remove_command": "sudo zypper rm gparted",
-    "update_command": "sudo zypper up gparted",
+    "install_command": "sudo /usr/lib/legendaryos/rpm-ostree install gparted",
+    "remove_command": "sudo /usr/lib/legendaryos/rpm-ostree uninstall gparted",
+    "update_command": "sudo /usr/lib/legendaryos/rpm-ostree upgrade",
     "check_command": "rpm -q gparted"
   },
   {
     "name": "FileZilla",
     "description": "Klient FTP do przesyłania plików.",
     "icon": "https://filezilla-project.org/images/filezilla_128x128.png",
-    "install_command": "sudo zypper in filezilla",
-    "remove_command": "sudo zypper rm filezilla",
-    "update_command": "sudo zypper up filezilla",
+    "install_command": "sudo /usr/lib/legendaryos/rpm-ostree install filezilla",
+    "remove_command": "sudo /usr/lib/legendaryos/rpm-ostree uninstall filezilla",
+    "update_command": "sudo /usr/lib/legendaryos/rpm-ostree upgrade",
     "check_command": "rpm -q filezilla"
   },
   {
     "name": "Darktable",
     "description": "Otwartoźródłowa aplikacja do obróbki zdjęć RAW.",
     "icon": "https://www.darktable.org/resources/darktable.svg",
-    "install_command": "sudo zypper in darktable",
-    "remove_command": "sudo zypper rm darktable",
-    "update_command": "sudo zypper up darktable",
+    "install_command": "sudo /usr/lib/legendaryos/rpm-ostree install darktable",
+    "remove_command": "sudo /usr/lib/legendaryos/rpm-ostree uninstall darktable",
+    "update_command": "sudo /usr/lib/legendaryos/rpm-ostree upgrade",
     "check_command": "rpm -q darktable"
   },
   {
     "name": "Calibre",
     "description": "Menedżer e-booków do organizacji i konwersji książek elektronicznych.",
     "icon": "https://calibre-ebook.com/img/calibre.svg",
-    "install_command": "sudo zypper in calibre",
-    "remove_command": "sudo zypper rm calibre",
-    "update_command": "sudo zypper up calibre",
+    "install_command": "sudo /usr/lib/legendaryos/rpm-ostree install calibre",
+    "remove_command": "sudo /usr/lib/legendaryos/rpm-ostree uninstall calibre",
+    "update_command": "sudo /usr/lib/legendaryos/rpm-ostree upgrade",
     "check_command": "rpm -q calibre"
   },
   {
     "name": "Flameshot",
     "description": "Potężne, ale proste narzędzie do robienia zrzutów ekranu.",
     "icon": "https://flameshot.org/img/flameshot-logo.png",
-    "install_command": "sudo zypper in flameshot",
-    "remove_command": "sudo zypper rm flameshot",
-    "update_command": "sudo zypper up flameshot",
+    "install_command": "sudo /usr/lib/legendaryos/rpm-ostree install flameshot",
+    "remove_command": "sudo /usr/lib/legendaryos/rpm-ostree uninstall flameshot",
+    "update_command": "sudo /usr/lib/legendaryos/rpm-ostree upgrade",
     "check_command": "rpm -q flameshot"
   },
   {
     "name": "Remmina",
     "description": "Klient do zdalnego pulpitu obsługujący RDP, VNC i inne protokoły.",
     "icon": "https://remmina.org/wp-content/uploads/2017/02/remmina-icon-256.png",
-    "install_command": "sudo zypper in remmina",
-    "remove_command": "sudo zypper rm remmina",
-    "update_command": "sudo zypper up remmina",
+    "install_command": "sudo /usr/lib/legendaryos/rpm-ostree install remmina",
+    "remove_command": "sudo /usr/lib/legendaryos/rpm-ostree uninstall remmina",
+    "update_command": "sudo /usr/lib/legendaryos/rpm-ostree upgrade",
     "check_command": "rpm -q remmina"
   },
   {
     "name": "Vim",
     "description": "Zaawansowany edytor tekstu dla programistów i administratorów.",
     "icon": "https://www.vim.org/images/vim_small.gif",
-    "install_command": "sudo zypper in vim",
-    "remove_command": "sudo zypper rm vim",
-    "update_command": "sudo zypper up vim",
+    "install_command": "sudo /usr/lib/legendaryos/rpm-ostree install vim",
+    "remove_command": "sudo /usr/lib/legendaryos/rpm-ostree uninstall vim",
+    "update_command": "sudo /usr/lib/legendaryos/rpm-ostree upgrade",
     "check_command": "rpm -q vim"
   }
 ]
     except json.JSONDecodeError:
         print(f"Error: 'packages.json' contains invalid JSON. Loading default package list.")
         return []
-
 # Funkcja sprawdzająca, czy paczka jest zainstalowana
 def is_package_installed(check_command):
     try:
@@ -250,7 +248,6 @@ def is_package_installed(check_command):
         return result.returncode == 0 and result.stdout.strip() != ""
     except subprocess.CalledProcessError:
         return False
-
 class PackageWidget(QWidget):
     def __init__(self, pkg, parent=None):
         super().__init__(parent)
@@ -322,7 +319,6 @@ class PackageWidget(QWidget):
         self.animation.setStartValue(0)
         self.animation.setEndValue(1)
         self.animation.start()
-
     def load_icon(self, url):
         self.progress_bar.setVisible(True)
         self.icon_label.setVisible(False)
@@ -330,7 +326,6 @@ class PackageWidget(QWidget):
         request = QNetworkRequest(QUrl(url))
         reply = manager.get(request)
         reply.finished.connect(lambda: self.set_icon(reply))
-
     def set_icon(self, reply):
         if reply.error() == QNetworkReply.NoError:
             data = reply.readAll()
@@ -341,12 +336,10 @@ class PackageWidget(QWidget):
             self.icon_label.setText("Ikona")
         self.progress_bar.setVisible(False)
         self.icon_label.setVisible(True)
-
     def install_package(self):
         self.install_button.setEnabled(False)
         self.install_button.setText("Instalowanie...")
         QTimer.singleShot(100, lambda: self._install_package())
-
     def _install_package(self):
         try:
             subprocess.run(self.pkg["install_command"], shell=True, check=True)
@@ -363,12 +356,10 @@ class PackageWidget(QWidget):
             self.parent().parent().parent().statusBar().showMessage("Błąd podczas instalacji!", 5000)
             self.install_button.setEnabled(True)
             self.install_button.setText("Zainstaluj")
-
     def remove_package(self):
         self.remove_button.setEnabled(False)
         self.remove_button.setText("Usuwanie...")
         QTimer.singleShot(100, lambda: self._remove_package())
-
     def _remove_package(self):
         try:
             subprocess.run(self.pkg["remove_command"], shell=True, check=True)
@@ -385,12 +376,10 @@ class PackageWidget(QWidget):
             self.parent().parent().parent().statusBar().showMessage("Błąd podczas usuwania!", 5000)
             self.remove_button.setEnabled(True)
             self.remove_button.setText("Usuń")
-
     def update_package(self):
         self.update_button.setEnabled(False)
         self.update_button.setText("Aktualizowanie...")
         QTimer.singleShot(100, lambda: self._update_package())
-
     def _update_package(self):
         try:
             subprocess.run(self.pkg["update_command"], shell=True, check=True)
@@ -401,7 +390,6 @@ class PackageWidget(QWidget):
             self.parent().parent().parent().statusBar().showMessage("Błąd podczas aktualizacji!", 5000)
             self.update_button.setEnabled(True)
             self.update_button.setText("Aktualizuj")
-
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -466,11 +454,9 @@ class MainWindow(QMainWindow):
         self.fab.setParent(self)
         self.fab.move(self.width() - 72, self.height() - 72)
         self.fab.show()
-
     def resizeEvent(self, event):
         super().resizeEvent(event)
         self.fab.move(self.width() - 72, self.height() - 72)
-
     def populate_packages(self, packages):
         for i in reversed(range(self.scroll_layout.count())):
             widget = self.scroll_layout.itemAt(i).widget()
@@ -481,16 +467,13 @@ class MainWindow(QMainWindow):
             package_widget.load_icon(pkg["icon"])
             self.scroll_layout.addWidget(package_widget)
         self.scroll_layout.addStretch()
-
     def filter_packages(self, text):
         filtered_packages = [pkg for pkg in self.packages if text.lower() in pkg["name"].lower() or text.lower() in pkg["description"].lower()]
         self.populate_packages(filtered_packages)
-
     def refresh_packages(self):
         self.packages = load_packages()
         self.populate_packages(self.packages)
         self.statusBar().showMessage("Lista odświeżona", 3000)
-
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     # Wbudowany styl QSS
