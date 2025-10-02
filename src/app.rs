@@ -2,7 +2,6 @@ use egui::{Align2, CentralPanel, Context, Image, ScrollArea, Ui, Vec2, Window};
 use std::sync::{Arc, Mutex};
 use std::thread;
 
-use eframe::epaint::TextureId;
 use eframe::{CreationContext, Frame};
 
 use crate::package::Package;
@@ -37,7 +36,7 @@ impl PackageManagerApp {
                             let texture = egui_ctx.load_texture(
                                 &pkg.name,
                                 egui::ColorImage::from_rgba_unmultiplied(size, &pixels),
-                                egui::TextureOptions::default(),
+                                                                egui::TextureOptions::default(),
                             );
                             icons_clone.lock().unwrap()[i] = Some(texture);
                         }
@@ -59,8 +58,7 @@ impl PackageManagerApp {
     fn show_status(&mut self, ui: &mut Ui) {
         if !self.status_message.is_empty() {
             ui.label(&self.status_message);
-            // Clear after some time
-            // In immediate mode, we can use a timer, but for simplicity, clear on next frame
+            // Clear after some time (simplified for immediate mode)
         }
     }
 }
@@ -85,8 +83,7 @@ impl eframe::App for PackageManagerApp {
                     ui.horizontal(|ui| {
                         // Icon
                         if let Some(texture) = &self.icons.lock().unwrap()[i] {
-                            let texture_id: TextureId = texture.id();
-                            ui.add(Image::new(texture_id, Vec2::new(64.0, 64.0)));
+                            ui.add(Image::new(texture.id(), Vec2::new(64.0, 64.0)));
                         } else {
                             ui.label("Ładowanie ikony...");
                         }
@@ -102,10 +99,10 @@ impl eframe::App for PackageManagerApp {
                                     .arg("-c")
                                     .arg(&pkg.install_command)
                                     .output() {
-                                    self.status_message = format!("{} zainstalowany pomyślnie!", pkg.name);
-                                } else {
-                                    self.status_message = "Błąd podczas instalacji!".to_string();
-                                }
+                                        self.status_message = format!("{} zainstalowany pomyślnie!", pkg.name);
+                                    } else {
+                                        self.status_message = "Błąd podczas instalacji!".to_string();
+                                    }
                             }
 
                             if ui.button("Remove").clicked() && installed {
@@ -113,10 +110,10 @@ impl eframe::App for PackageManagerApp {
                                     .arg("-c")
                                     .arg(&pkg.remove_command)
                                     .output() {
-                                    self.status_message = format!("{} usunięty pomyślnie!", pkg.name);
-                                } else {
-                                    self.status_message = "Błąd podczas usuwania!".to_string();
-                                }
+                                        self.status_message = format!("{} usunięty pomyślnie!", pkg.name);
+                                    } else {
+                                        self.status_message = "Błąd podczas usuwania!".to_string();
+                                    }
                             }
 
                             if ui.button("Aktualizuj").clicked() && installed {
@@ -124,10 +121,10 @@ impl eframe::App for PackageManagerApp {
                                     .arg("-c")
                                     .arg(&pkg.update_command)
                                     .output() {
-                                    self.status_message = format!("{} zaktualizowany pomyślnie!", pkg.name);
-                                } else {
-                                    self.status_message = "Błąd podczas aktualizacji!".to_string();
-                                }
+                                        self.status_message = format!("{} zaktualizowany pomyślnie!", pkg.name);
+                                    } else {
+                                        self.status_message = "Błąd podczas aktualizacji!".to_string();
+                                    }
                             }
                         });
                     });
@@ -137,14 +134,14 @@ impl eframe::App for PackageManagerApp {
 
             // FAB simulation
             Window::new("FAB")
-                .anchor(Align2::RIGHT_BOTTOM, [-16.0, -16.0])
-                .title_bar(false)
-                .resizable(false)
-                .show(ctx, |ui| {
-                    if ui.button("+").clicked() {
-                        self.status_message = "Dodawanie nowej paczki (funkcja w rozwoju)".to_string();
-                    }
-                });
+            .anchor(Align2::RIGHT_BOTTOM, [-16.0, -16.0])
+            .title_bar(false)
+            .resizable(false)
+            .show(ctx, |ui| {
+                if ui.button("+").clicked() {
+                    self.status_message = "Dodawanie nowej paczki (funkcja w rozwoju)".to_string();
+                }
+            });
         });
 
         if !self.search_text.is_empty() {
@@ -158,13 +155,13 @@ impl eframe::App for PackageManagerApp {
 impl PackageManagerApp {
     fn filter_packages(&mut self) {
         self.filtered_packages = self
-            .packages
-            .iter()
-            .filter(|pkg| {
-                pkg.name.to_lowercase().contains(&self.search_text.to_lowercase())
-                    || pkg.description.to_lowercase().contains(&self.search_text.to_lowercase())
-            })
-            .cloned()
-            .collect();
+        .packages
+        .iter()
+        .filter(|pkg| {
+            pkg.name.to_lowercase().contains(&self.search_text.to_lowercase())
+            || pkg.description.to_lowercase().contains(&self.search_text.to_lowercase())
+        })
+        .cloned()
+        .collect();
     }
 }
