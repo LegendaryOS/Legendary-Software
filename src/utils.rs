@@ -280,16 +280,6 @@ fn default_packages() -> Vec<Package> {
             update_command: "sudo /usr/lib/legendaryos/rpm-ostree upgrade".to_string(),
             check_command: "rpm -q eclipse".to_string(),
         },
-        // Dodane dodatkowe aplikacje
-        Package {
-            name: "VSCode".to_string(),
-            description: "Popularny edytor kodu z wieloma rozszerzeniami.".to_string(),
-            icon: "https://code.visualstudio.com/assets/images/code-stable.png".to_string(),
-            install_command: "sudo /usr/lib/legendaryos/rpm-ostree install code".to_string(),
-            remove_command: "sudo /usr/lib/legendaryos/rpm-ostree remove code".to_string(),
-            update_command: "sudo /usr/lib/legendaryos/rpm-ostree upgrade".to_string(),
-            check_command: "rpm -q code".to_string(),
-        },
         Package {
             name: "IntelliJ IDEA".to_string(),
             description: "IDE dla Java i innych języków programowania.".to_string(),
@@ -376,9 +366,9 @@ fn default_packages() -> Vec<Package> {
 
 pub fn is_package_installed(check_command: &str) -> bool {
     Command::new("sh")
-        .arg("-c")
-        .arg(check_command)
-        .output()
-        .map(|output| output.status.success())
-        .unwrap_or(false)
+    .arg("-c")
+    .arg(check_command)
+    .output()
+    .map(|output| output.status.success())
+    .unwrap_or(false)
 }
